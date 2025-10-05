@@ -1,4 +1,5 @@
 let evMap, evMarker, selectedLatLon = null, selectedEvent = null;
+// Code asisted by OpenAI ChatGPT (GPT-5)
 
 function initEventsMap() {
     evMap = L.map('map').setView([20.97, -89.62], 6);
@@ -107,3 +108,4 @@ window.addEventListener("load", () => {
     renderEventsList();
     wireLogoutEvents();
 });
+
