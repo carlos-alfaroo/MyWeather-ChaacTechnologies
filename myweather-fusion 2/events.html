@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>MyWeather Fusion — Eventos</title>
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+
+<body>
+    <header class="app-header">
+        <div class="brand">
+            <div class="logo">MW</div>
+            <div>
+                <div class="h1">Eventos y Clima</div>
+                <div class="subtitle">Elige un evento y una ubicación para ver el pronóstico de esa fecha</div>
+            </div>
+        </div>
+        <div class="actions">
+            <a class="btn" href="app.html" target="_blank" rel="noopener">🗺️ Volver al mapa</a>
+            <button id="logout" class="secondary">Cerrar sesión</button>
+        </div>
+    </header>
+
+    <main class="layout two-col">
+        <section class="panel">
+            <h3>Próximos 5 eventos (futuro → pasado)</h3>
+            <div id="events-list" class="events-list">Cargando eventos…</div>
+        </section>
+
+        <section class="panel">
+            <h3>Selecciona ubicación</h3>
+            <div id="map"></div>
+            <div class="muted small">Haz clic en el mapa para fijar la ubicación.</div>
+
+            <div id="event-forecast" class="event-forecast"></div>
+            <div id="event-advice" class="advice"></div>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="assets/utils.js"></script>
+    <script src="assets/weather.js"></script>
+    <script src="assets/calendar.js"></script>
+    <script src="assets/events.js"></script>
+</body>
+
+</html>

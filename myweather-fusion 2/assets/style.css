@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #eef2f3;
+    --card: #fff;
+    --ink: #111;
+    --muted: #666;
+    --acc: #1a73e8;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, Segoe UI, Roboto, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+}
+
+/* Login */
+.centered {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.card {
+    background: var(--card);
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .08);
+    width: min(420px, 92vw);
+    text-align: center;
+}
+
+button,
+.btn {
+    border: 0;
+    padding: 10px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: var(--acc);
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+}
+
+button.secondary {
+    background: #e0e3e7;
+    color: #111;
+}
+
+.btn-sm {
+    padding: 6px 10px;
+    border-radius: 8px;
+}
+
+.muted {
+    color: var(--muted);
+}
+
+.small {
+    font-size: .9rem;
+}
+
+/* Header y layout */
+.app-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    background: var(--card);
+    border-bottom: 1px solid #e6e8eb;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    background: #eaf1fb;
+    font-weight: 700;
+}
+
+.h1 {
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+.subtitle {
+    font-size: .95rem;
+    color: var(--muted);
+}
+
+.actions {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 12px;
+    padding: 12px;
+}
+
+.layout.two-col {
+    grid-template-columns: 1fr 1fr;
+}
+
+#map {
+    width: 100%;
+    height: 80vh;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.panel {
+    background: var(--card);
+    border-radius: 12px;
+    padding: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Pronóstico */
+.forecast-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.day {
+    background: #f5f8ff;
+    border: 1px solid #d8e6ff;
+    border-radius: 10px;
+    padding: 8px;
+    font-size: 0.9rem;
+}
+
+.advice {
+    margin-top: 8px;
+    padding: 10px;
+    background: #fff8e1;
+    border: 1px solid #ffe0a3;
+    border-radius: 10px;
+    font-size: 0.9rem;
+}
+
+/* Eventos */
+.events-list {
+    max-height: 70vh;
+    overflow: auto;
+}
+
+.event-card {
+    background: #eaf1fb;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.event-forecast {
+    margin-top: 12px;
+}
