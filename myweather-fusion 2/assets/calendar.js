@@ -1,4 +1,5 @@
 // === Obtiene los 5 eventos del calendario de Google (futuro → pasado) ===
+// Code asisted by OpenAI ChatGPT (GPT-5)
 async function fetchEvents() {
     const token = getToken();
     if (!token) throw new Error("No hay token de acceso");
@@ -36,3 +37,4 @@ async function fetchEvents() {
         raw: ev
     }));
 }
+
