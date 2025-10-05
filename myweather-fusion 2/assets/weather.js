@@ -1,4 +1,5 @@
 // === Open-Meteo: clima actual + 5 días ===
+// Code asisted by OpenAI ChatGPT (GPT-5)
 async function fetchFiveDay(lat, lon) {
     const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}` +
         `&current_weather=true&daily=temperature_2m_max,temperature_2m_min,precipitation_sum&timezone=auto`;
@@ -62,3 +63,4 @@ function buildAdvice(stats, placeLabel) {
 
     return msg.join(" ");
 }
+
