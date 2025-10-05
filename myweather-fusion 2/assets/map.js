@@ -1,3 +1,4 @@
+// Code asisted by OpenAI ChatGPT (GPT-5)
 let map, marker;
 
 function initMap() {
@@ -86,3 +87,4 @@ window.addEventListener("load", () => {
     initMap();
     wireLogout();
 });
+
