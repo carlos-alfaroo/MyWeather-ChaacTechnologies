@@ -1,4 +1,5 @@
 // CLIENT_ID funcional de tu proyecto base
+// Code asisted by OpenAI ChatGPT (GPT-5)
 const CLIENT_ID = "263535346263-skspi078da7mhq26chnsfn2iegnc23d0.apps.googleusercontent.com";
 const SCOPES = "https://www.googleapis.com/auth/calendar.readonly https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile openid";
 
@@ -31,3 +32,4 @@ window.addEventListener("load", () => {
         tokenClient.requestAccessToken({ prompt: "consent" });
     });
 });
+
